@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color:mediumseagreen;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d2b64;
+    font-size: 2rem;
+  }
+  
+  .balance {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .balance span {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .income-expense {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .income-expense div {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 15px;
+    width: 48%;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .income-expense div:hover {
+    transform: scale(1.05);
+  }
+  
+  .money.plus {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .money.minus {
+    color: crimson;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+
+  form select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  form select:focus {
+    border-color: #1d2b64;
+    outline: none;
+  }
+  
+  
+  form input:focus {
+    border-color: #1d2b64;
+    outline: none;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #1d2b64;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #3c45a5;
+    transform: scale(1.02);
+  }
+  
+  .list {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .list li {
+    background-color: #f9f9f9;
+    border-right: 5px solid;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.4s ease;
+    transition: transform 0.2s ease;
+  }
+  
+  .list li:hover {
+    transform: translateX(5px);
+  }
+  
+  .list li.plus {
+    border-color: green;
+  }
+  
+  .list li.minus {
+    border-color: crimson;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .delete-btn:hover {
+    color: crimson;
+  }
+
+  @media (max-width: 420px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .income-expense {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .income-expense div {
+      width: 100%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  #filter-category {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+  }
