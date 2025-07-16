@@ -16,7 +16,7 @@ A simple and stylish web app to help you track your income and expenses.
 ## 🖥️ Live Preview (optional)
 
 You can host this with GitHub Pages or Netlify, then add a link here:
-[View Demo](https://your-username.github.io/smart-budget-tracker/)
+[View Demo](https://borisp97.github.io/smart-budget-tracker/)
 
 ## 📂 Tech Used
 
